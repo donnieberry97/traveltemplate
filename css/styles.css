@@ -1,7 +1,7 @@
 
 
 body {
-    font-family: 'Open Sans', sans-serif !important;
+     font-family: 'Nunito', sans-serif; !important;
     font-size: 100% !important;
     overflow-x: hidden !important;
 }
@@ -9,6 +9,11 @@ body {
 html {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
+    line-height: 1.6 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2 !important;
 }
 
 
@@ -67,6 +72,7 @@ h1.landing-section {
     color: white;
     border: none;
     width: 100%;
+    border-radius: 10px;
     text-transform: uppercase;
     height: 50px;
     font-size: 0.9em;
@@ -253,6 +259,7 @@ h1.landing-section {
     font-size: 1em;
     height: 3em;
     transition: 0.4s ease;
+        border-radius: 10px;
 }
 
 .info-section-button:hover {
@@ -263,15 +270,10 @@ h1.landing-section {
 
 .h2 {
     font-size: 4em;
-    line-height: 1.25em;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.p {
-    font-size: 1em;
-    line-height: 1.375em;
-}
 
 #location-section {
     background-color: #f4f4f4;
@@ -318,11 +320,12 @@ h1.landing-section {
     cursor: pointer;
 }
 
+
 .location-box h4 {
     margin-bottom: 13px;
     color: white;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .absolute {
@@ -338,7 +341,6 @@ h5.location {
 }
 
 .location-box p {
-    line-height: 1.6em;
     color: white;
     font-size: 1em;
 }
@@ -426,22 +428,19 @@ li.side a:hover {
 
 .info-box-information p {
     font-size: 1em;
-    line-height: 1.8em;
     color: #666;
 }
 
 .info-img-header h4 {
     font-size: 2em;
     color: #444;
-    font-weight: 600;
-    line-height: 1.4em;
+    font-weight: 800;
 }
 
 .info-img-header h5 {
     font-size: 1.5em;
     font-weight: 600;
     color: #EC4067;
-    line-height: 1.7em;
     margin-bottom: 20px;
 }
 
@@ -548,6 +547,7 @@ footer.foot {
     .submit {
         margin-top: 10px;
         height:30px;
+        border-radius: 10px;
     }
     
     #landing-section-submit {

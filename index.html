@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <title>Website #</title>
 </head>
@@ -120,7 +122,7 @@
                             <div id="location-box">
                                 <!-- Root element for your Vue app -->
                                 <div v-for="location in locations" class="location-box" v-bind:style="{ background: 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ),url(' + location.img + ')' }" @click="moreinfo2(location)">
-                                    <h4>Visit {{location.name}}</h4>
+                                    <h4 class="t">Visit {{location.name}}</h4>
                                     <p>{{location.desc}}</p>
                                 </div>
                             </div>
