@@ -1,3 +1,4 @@
+@media (min-width: 1281px) {
 body {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 100% !important;
@@ -10,7 +11,6 @@ html {
 }
 
 #loadWebPage {
-    display: none;
 }
 
 .nav-container {
@@ -230,11 +230,10 @@ h1.landing-section {
 
 .open {
     transition: 1s;
-    margin-left: 250px;
 }
 
 .side-menu-open {
-    width: 250px !important;
+    height: 130px !important;
 }
 
 .open-slide {
@@ -356,24 +355,29 @@ h5.location {
 
 ul.side {
     list-style: none;
-    margin-top: 130px;
+    display: inline-block;
+    margin-left: 130px
 }
 
 li.side {
-    text-align: center;
+    display:inline-block;
+    margin-right: -4px;
 }
 
 li.side a {
-    padding: 2em 0em;
-    border-bottom: 1px solid #333;
+    height:130px;
+    width: 150px;
+    text-align: center;
+    line-height: 130px;
+    border-left: 1px solid #333;
     display: block;
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
-li.side a:first-child {
-    border-top: 1px solid #333;
+li.side a:last-child {
+    border-right: 1px solid #333;
 }
 
 li.side a:hover {
@@ -384,8 +388,8 @@ li.side a:hover {
 .side-nav {
     transition: 0.4s;
     background-color: #222;
-    height: 100%;
-    width: 0;
+    width: 100% !important;
+    height:0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -514,10 +518,43 @@ footer.foot {
         transform: rotate(360deg);
     }
 }
+}
 
-
-@media only screen and (max-width:1000px) {
-#info-section::after {
-    display: none;
+@media (min-width: 481px) and (max-width: 767px) {
+    #main-nav {
+        display:none;
+    }
+    
+    body {
+        font-size: 60% !important;
+    }
+    
+    .hamburger {
+        padding: 3em;
+        box-sizing: border-box;
+        top:0;
+        left:0;
+    }
+    
+    ul.side {
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    }
+    
+    li.side a {
+    height:100px;
+    width: 70px;
+    text-align: center;
+    line-height: 100px;
+    border-left: 1px solid #333;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+    
+    .side-menu-open {
+    height: 100px !important;
 }
 }
