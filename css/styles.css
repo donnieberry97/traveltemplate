@@ -523,6 +523,10 @@ footer.foot {
         display:none;
     }
     
+    #info-section::after {
+        display: none;
+    }
+    
     body {
         font-size: 60% !important;
     }
