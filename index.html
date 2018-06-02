@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -91,8 +91,9 @@
                     </div>
                 </div>
                 <div id="location-section">
+                   <div style="padding: 5em">
                     <div class="main-container">
-                        <div class="location-grid-container">
+                        <div class="location-grid-container shadow6">
                             <div id="info-box" class="outline">
                                 <div v-for="location in locations" class="absolute">
                                     <transition name="fade">
@@ -125,6 +126,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
