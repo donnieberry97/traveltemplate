@@ -73,10 +73,3 @@ const app = new Vue({
     }
 })
 
-
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 2000);
-}
-

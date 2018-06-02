@@ -10,9 +10,6 @@ html {
     -moz-osx-font-smoothing: grayscale !important;
 }
 
-#loadWebPage {
-    display: none;
-}
 
 .nav-container {
     max-width: 1300px;
