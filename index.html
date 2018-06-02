@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <title>Website #</title>
+</head>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div id="loadWebPage">
+        <div id="test">
+            <div class="hamburger" @click="openSlide()">
+                <svg width="30" height="30">
+                   <path d="M0,5 50,5" stroke="#EC4067" stroke-width="5"/>
+                   <path d="M0,14 50,14" stroke="#EC4067" stroke-width="5"/>
+                   <path d="M0,23 50,23" stroke="#EC4067" stroke-width="5"/>
+               </svg>
+            </div>
+
+            <div id="side-menu" class="side-nav" v-bind:class="{'side-menu-open': isOpen}">
+                <ul class="side">
+                    <li class="side"><a href="#">Home</a></li>
+                    <li class="side"><a href="#">About</a></li>
+                    <li class="side"><a href="#">Projects</a></li>
+                    <li class="side"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="main" v-bind:class="{'open': isOpen}" v-on:click="hamburgerListen()">
+                <nav id="main-nav">
+                    <div class="nav-container nav-grid">
+                        <div class="nav-logo">
+                            <img src="img/logo2.JPG" height="70%">
+                        </div>
+
+                        <div class="nav-links">
+                            <ul>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="landing-section">
+                    <div class="main-container">
+                        <div class="box-container">
+                            <div id="landing-section-search">
+                                <h1 class="landing-section">Start planning today</h1>
+                                <div class="landing-section-row1-container">
+
+                                    <input type="text" class="inputRow" placeholder="Name..">
+                                    <input type="text" class="inputRow" placeholder="Place..">
+                                    <input type="text" class="inputRow" placeholder="Item..">
+
+                                </div>
+
+                                <div class="landing-section-row2-container">
+                                    <select id="location" class="selectClass" placeholder="test">
+                        <option value="" disabled selected hidden>Location...</option>
+                        <option value="location1">Location 1</option><option value="location2">Location 2</option><option value="location3">Location 3</option>
+                    </select>
+                                    <select id="adults" class="selectClass">
+                       <option value="" disabled selected hidden>Adults...</option>
+                        <option value="location1">Location 1</option><option value="location2">Location 2</option><option value="location3">Location 3</option>
+                    </select>
+                                    <select id="children" class="selectClass">
+                       <option value="" disabled selected hidden>Children...</option>
+                        <option value="location1">Location 1</option><option value="location2">Location 2</option><option value="location3">Location 3</option>
+                    </select>
+                                    <div id="landing-section-submit">
+                                        <button id="submit" name="submit" class="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="info-section">
+                    <div class="main-container">
+                        <div id="info-section-content">
+                            <h2 class="h2">How can we help?</h2>
+                            <p class="p">Suspendisse pulvinar nulla augue, in elementum dolor porttitor id.</p>
+                            <button class="info-section-button">Register Newsletter</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="location-section">
+                    <div class="main-container">
+                        <div class="location-grid-container">
+                            <div id="info-box" class="outline">
+                                <div v-for="location in locations" class="absolute">
+                                    <transition name="fade">
+                                        <div v-for="moreinfos in location.moreinfo" v-if="location === selected">
+                                            <div class="info-img-wrapper" v-bind:style="{ background: 'url(' + moreinfos.img + ')' }"></div>
+                                            <div class="info-wrapper">
+                                                <div class="info-img-header">
+                                                    <h4>{{moreinfos.header}}</h4>
+                                                    <h5>{{moreinfos.shortdesc}}</h5>
+                                                </div>
+                                                <div class="info-box-information">
+                                                    <p>{{moreinfos.desc}}</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </transition>
+                                </div>
+
+                                <div class="info-box-button">
+                                    <button class="info-box">Read more</button>
+                                </div>
+                            </div>
+                            <div id="location-box">
+                                <!-- Root element for your Vue app -->
+                                <div v-for="location in locations" class="location-box" v-bind:style="{ background: 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ),url(' + location.img + ')' }" @click="moreinfo2(location)">
+                                    <h4>Visit {{location.name}}</h4>
+                                    <p>{{location.desc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="foot">Donnie Berry</footer>
+    </div>
+
+</html>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>

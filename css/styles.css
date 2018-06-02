@@ -1,0 +1,516 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 100% !important;
+    overflow-x: hidden !important;
+}
+
+html {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+#loadWebPage {
+    display: none;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box-container {
+    width: 100%;
+    padding: 14em 0em;
+}
+
+#landing-section {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../img/city.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.landing-section-row1-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.landing-section-row2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    margin-top: 1em;
+}
+
+#landing-section-submit {
+    text-align: center;
+}
+
+h1.landing-section {
+    font-size: 3em;
+    font-weight: 600;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    margin-bottom: 0.6em;
+}
+
+.submit {
+    background-color: #EC4067;
+    color: white;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    height: 50px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: 0.4s all ease;
+}
+
+.submit:hover {
+    background-color: #ef5f80;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.inputRow {
+    margin-right: 10%;
+    border: 1px solid #e6e6e6;
+    height: 50px;
+    padding: 0.4em 1em;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.selectClass {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    margin-right: 10%;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    transition: 0.2s ease;
+}
+
+.selectClass {
+    cursor: pointer;
+}
+
+.selectClass:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px red;
+    transition: 0.2s ease;
+}
+
+.inputRow:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px red;
+    transition: 0.2s ease;
+}
+
+.inputRow:last-of-type {
+    margin-right: 0px;
+}
+
+#landing-section-search {
+    background-color: white;
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+
+.nav-grid {
+    grid-template-columns: 20% 80%;
+}
+
+#main-nav {
+    width: 100%;
+    background-color: #fff;
+}
+
+.active {
+    background-color: #EC4067;
+    color: white !important;
+}
+
+.nav-logo {
+    width: 100%;
+}
+
+.nav-logo > img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav-links {
+    float: right;
+    text-align: right;
+}
+
+.nav-links > ul {
+    list-style: none;
+}
+
+.nav-links > ul > li {
+    display: inline-block;
+    margin-right: -4px;
+    border-left: 1px solid #e6e6e6;
+}
+
+
+.nav-links > ul > li > a {
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 3em 1.5em;
+    font-size: 1.1em;
+    transition: 0.4s ease;
+    color: #222;
+}
+
+.nav-links > ul > li:last-child {
+    border-right: 1px solid #e6e6e6;
+}
+
+.nav-links > ul > li > a:hover {
+    background-color: #ef5f80;
+    transition: 0.4s ease;
+    color: white;
+}
+
+#info-section {
+    background-color: #EC4067;
+    position: relative;
+}
+
+#info-section::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50em;
+    height: 0;
+    border-top: solid 50px #EC4067;
+    border-left: solid 50em transparent;
+    border-right: solid 50em transparent;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.redTriangleDown {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border:
+}
+
+#info-section-content {
+    padding: 3em 0em 0em 0em;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.open {
+    transition: 1s;
+    margin-left: 250px;
+}
+
+.side-menu-open {
+    width: 250px !important;
+}
+
+.open-slide {
+    transition: 0.4s;
+}
+
+.open-slide:hover {
+    cursor: pointer;
+}
+
+.info-section-button {
+    border: none;
+    background-color: #EC4067;
+    border: 1px solid #fff;
+    width: 15em;
+    color: white;
+    margin-top: 20px;
+    font-size: 1em;
+    height: 3em;
+    transition: 0.4s ease;
+}
+
+.info-section-button:hover {
+    cursor: pointer;
+    background-color: #ef5f80;
+    transition: 0.4s ease;
+}
+
+.h2 {
+    font-size: 4em;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.p {
+    font-size: 1em;
+    line-height: 1.375em;
+}
+
+#location-section {
+    background-color: #f4f4f4;
+}
+
+.location-grid-container {
+    padding: 5em 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info-box {
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.info-img-wrapper {
+    height: 150px;
+    width: 100%;
+    background-color: red;
+}
+
+#location-box {
+    width: 100%;
+}
+
+.outline {}
+
+.location-box {
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    box-sizing: border-box
+}
+
+.location-box:hover {
+    box-shadow: 0px 0px 20px white inset;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.location-box h4 {
+    margin-bottom: 13px;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h5.location {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.location-box p {
+    line-height: 1.6em;
+    color: white;
+    font-size: 1em;
+}
+
+.hamburger {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+ul.side {
+    list-style: none;
+    margin-top: 130px;
+}
+
+li.side {
+    text-align: center;
+}
+
+li.side a {
+    padding: 2em 0em;
+    border-bottom: 1px solid #333;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+li.side a:first-child {
+    border-top: 1px solid #333;
+}
+
+li.side a:hover {
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.side-nav {
+    transition: 0.4s;
+    background-color: #222;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.btn-close {
+    color: red;
+}
+
+#test {}
+
+#main {
+    transition: 0.4s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+}
+
+.info-wrapper {
+    padding: 1.5em;
+    position: relative;
+}
+
+.info-box-information p {
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.info-img-header h4 {
+    font-size: 2em;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.info-img-header h5 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #EC4067;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
+.info-box-button {
+    position: absolute;
+    bottom: 1.2em;
+    right: 2em;
+    text-align: left;
+}
+
+.info-box {
+    background-color: #EC4067;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    position: relative;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: 0.4s all ease;
+}
+
+.info-box:hover {
+    background-color: #ef5f80;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+footer.foot {
+    padding: 3em 0em;
+    background-color: #222;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/* Center the loader */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    margin: -50px 0 0 -50px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #EC4067;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
