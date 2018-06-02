@@ -11,6 +11,7 @@ html {
 }
 
 #loadWebPage {
+    display: none;
 }
 
 .nav-container {
